@@ -28,7 +28,12 @@ use it\thecsea\simple_caldav_client\CalDAVCalendar;
 use it\thecsea\simple_caldav_client\CalDAVException;
 use it\thecsea\simple_caldav_client\SimpleCalDAVClient;
 
-require_once(__DIR__ . '/vendor/autoload.php');
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require_once(__DIR__ . '/vendor/autoload.php');
+} else {
+    require_once(__DIR__ . '/../../vendor/autoload.php');
+}
+
 require_once(__DIR__ . '/lib/php/password_encryption.php');
 require_once(__DIR__ . '/lib/php/ics_file_modification.php');
 require_once(__DIR__ . '/lib/php/event_comparison.php');

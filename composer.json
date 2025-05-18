@@ -1,5 +1,5 @@
 {
-    "name": "scopen-coop/roundcube_caldav",
+    "name": "robvanhout/roundcube_caldav",
     "type": "roundcube-plugin",
     "description": "Set a remote CalDav server and reply to your meetings invitation directly in Roundcube Mail",
     "keywords": ["caldav","calendar", "event", "roundcube","owncloud","nextcloud","scopen"],
